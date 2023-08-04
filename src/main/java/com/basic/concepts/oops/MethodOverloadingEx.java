@@ -1,8 +1,8 @@
-package com.interviews.questions.oops;
+package com.basic.concepts.oops;
 
 import java.io.IOException;
 
-public class MethodOverloadingEx {
+public class MethodOverloadingEx {	
 
 	// Overloaded methods will have same name but different number of arguments or different types of arguments.
 	// Method signature is used by the compiler to differentiate the methods.
@@ -37,14 +37,36 @@ public class MethodOverloadingEx {
 	//	System.out.println("methodB(String a)");
 	//}
 	
+	public static void methodC(int a) {
+		System.out.println("methodC(int a)");
+	}
+//	protected static void methodC(int a) { //compilation error
+//		System.out.println("methodC(int a)");
+//	}
+//	default static void methodC(int a) { //compilation error
+//		System.out.println("methodC(int a)");
+//	}
+//	private static void methodC(int a) { //compilation error
+//		System.out.println("methodC(int a)");
+//	}
+	
+	
 	//conclusion:-
 	// no. of inp para and types of para -> responsible for method overloading
 	//return type -> nothing to do with method overloading
 	//type of exception that method will throws  -> nothing to do with method overloading
-	//method modifier -> nothing to do with method overloading
+	//access modifier -> nothing to do with method overloading
+	//Constructors can be overloaded in a similar way as function overloading.
+	
 
-	public static void main(String[] args) {
-
-	}
+	//Ref- https://javaconceptoftheday.com/important-java-interview-questions-on-method-overloading/
+	
+	//constructor overloading
+		public MethodOverloadingEx() {
+			
+		}
+	    public MethodOverloadingEx(int a) {
+			
+		}		
 
 }

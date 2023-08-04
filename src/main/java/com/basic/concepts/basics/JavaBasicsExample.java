@@ -1,4 +1,4 @@
-package com.interviews.questions.basics;
+package com.basic.concepts.basics;
 
 public class JavaBasicsExample {
 
