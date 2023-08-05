@@ -13,7 +13,22 @@ public class JavaBasicsExample {
 		// the variables x & y are arguments
 		int product = multiply(x, y);
 		System.out.println(product);
+		method();
 
 	}
+
+	public static void method() {
+		try {
+			System.out.println("try bloack");
+		} catch (Exception e) {
+			System.out.println("catch bloack");
+			System.exit(0);
+		} finally {
+			System.out.println("finally bloack");
+		}
+	}
+	//o/p:-
+	//try bloack
+	//finally bloack
 
 }
